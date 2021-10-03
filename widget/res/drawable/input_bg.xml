@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--have solid blue light color-->
+    <solid android:color="@color/blue_light"/>
+    <!--have 11dp border color-->
+    <corners android:radius="11dp"/>
+</shape>

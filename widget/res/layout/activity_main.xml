@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <!--membuat TextView dengan
+        tulisan: Good morning
+        rata kanan
+        bercetak tebal-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Good Morning!"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--membuat Text view dengan
+        margin atas atau jarak atas 25dp
+        warna text: hitam
+        ukuran text: 38dp
+        bercetak tebal-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Welcome to FoodDrinkStore"
+        android:textColor="@color/black"
+        android:textSize="38dp"
+        android:textStyle="bold" />
+
+    <!--membuat text view dengan
+        jarak atau margin atas 3dp
+        padding kanan 50dp-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:paddingRight="50dp"
+        android:text="Tanta petere igitur, ne sineres memini fieri etiam aliquam inclinationem ad"/>
+
+
+    <!--membuat text view dengan
+        jarak atau margin atas 25dp-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan kota cabang"
+        android:layout_marginTop="25dp"
+        />
+    <!--membuat autocomplete dengan
+        id: actv
+        margin atau jarak atas 5dp
+        menggunakan background input_bg
+        akan muncul auto complete-nya saat 1 huruf diketikkan
+        memiliki padding 15dp (atas, kanan, bawah, kiri)-->
+    <AutoCompleteTextView
+        android:id="@+id/actv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_bg"
+        android:completionThreshold="1"
+        android:padding="15dp"/>
+
+    <!--membuat text view dengan margin atau jarak atas 10dp-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih jenis menu"
+        android:layout_marginTop="10dp"
+        />
+    <!--membuat spinner dengan
+        jarak atas atau margin atas 15dp
+        padding 15dp
+        menggunakan background input_bg-->
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:background="@drawable/input_bg"/>
+
+    <!--membuat text view dengan margin atas atau jarak atas 20dp-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose One"
+        android:layout_marginTop="20dp"
+        />
+
+    <!--membuat listview dengan id lv-->
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--membuat button atau tombol dengan
+        tinggi 50dp
+        menggunakan background btn_bg
+        jarak atau margin atas 30dp-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_bg"
+        android:text="Order Now"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--create new shape that will use for background-->
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--have solid scallop color-->
+    <solid android:color="@color/scallop"/>
+    <!--have border radius 11dp-->
+    <corners android:radius="11dp"/>
+</shape>
