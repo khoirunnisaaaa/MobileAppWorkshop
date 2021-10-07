@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--membuat banyak item pada dengan menggunakan layout relative-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@color/white">
+
+        <!--membalutnya dengan card view, detail :
+            - lebar dan tinggi 60dp
+            - id : imageView
+            - corner radius 60dp
+            - margin atas dan kiri 20dp
+        -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView"
+            app:cardCornerRadius="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <!--membuat ImageView dengan
+                - lebar dan tinggi 60dp
+                - source: @drawable/gi
+                - id : imageView1
+            -->
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gi"
+                android:id="@+id/imageView1">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <!--membuat textView dengan
+            - lebar 120dp
+            - tinggi 30dp
+            - memuat teks
+            - berada di kanan imageView dan teks berwarna hitam
+            - ukuran font 20sp
+            - margin atas dan kiri 20dp
+        -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="Jenn"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <!--membuat textView2 dengan
+            - lebar 80 dp & tinggi 30 dp
+            - memuat teks untuk waktu
+            - margin atas 20 & kiri 75 dp
+            - ukuran teks 12 sp
+        -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="11:20Am"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="75dp">
+
+        </TextView>
+
+        <!--membuat textView3 dengan
+            - lebar 140dp
+            - tinggi 30 dp
+            - ukuran font 15sp
+            - berada di kanan imageView & di bawah textView
+        -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:text="Hi, Are you fine?"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_below="@id/textView"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <!--membuat divider dengan
+            - id : divider
+            - lebar sesuai dengan parent & tinggi 20dp
+            - berada di kanan imageView
+            - warna text : #CDC7C7
+        -->
+        <TextView
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/imageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="---------------------"
+            android:textColor="#CDC7C7"
+            android:textSize="15sp">
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
