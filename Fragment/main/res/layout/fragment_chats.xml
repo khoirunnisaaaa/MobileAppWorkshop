@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--membuat layout utama pada menu Home dengan tipe linear yang berorientasi vertical-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ChatsFragment"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--membuat layout dengan tipe relative untuk memuat konten greetings dan image profil ukuran kecil dari pengguna-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/greetings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Morning!"
+            android:textColor="#C5C5C5"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/greetings"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="Hello Khoirunnisa"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="40dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="79dp"
+            android:layout_toRightOf="@+id/hello"
+            android:src="@drawable/profil" />
+
+        <!--membuat kumpulan button untuk fungsi filter-->
+        <Button
+            android:id="@+id/btn_all"
+            android:text="all"
+            android:textSize="20dp"
+            android:textColor="#595858"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hello"
+            android:background="@drawable/bg_line"/>
+
+        <Button
+            android:id="@+id/btn_planets"
+            android:text="Planets"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="15dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hello"
+            android:layout_toRightOf="@+id/btn_all"
+            android:background="@drawable/bg_solid"/>
+        <Button
+            android:id="@+id/btn_cornets"
+            android:text="Cornets"
+            android:textSize="20dp"
+            android:textColor="#595858"
+            android:textAlignment="center"
+            android:layout_marginLeft="15dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hello"
+            android:layout_toRightOf="@+id/btn_planets"
+            android:background="@drawable/bg_line"/>
+    </RelativeLayout>
+
+
+    <!--menambahkan gambar banner-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:src="@drawable/banner"
+        android:layout_marginTop="30dp"/>
+
+    <!--membuat semacam card untuk item yang berupa image serta title di dalamnya-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:id="@+id/first"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_second_line"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/img_planet1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/jupiter" />
+            <TextView
+                android:id="@+id/jupiter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jupiter"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:layout_below="@+id/img_planet1"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:id="@+id/subTitle_jupiter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="256 Views"
+                android:textColor="#595858"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:layout_below="@+id/jupiter"
+                android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+
+        <!--membuat semacam card untuk item yang berupa image serta title di dalamnya-->
+        <RelativeLayout
+            android:id="@+id/second"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/first"
+            android:background="@drawable/bg_second_line"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/img_planet2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/planetearth" />
+
+            <TextView
+                android:id="@+id/earth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_planet2"
+                android:layout_marginTop="30dp"
+                android:text="Earth"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subTitle_earth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/earth"
+                android:layout_marginTop="5dp"
+                android:text="355 Views"
+                android:textAlignment="center"
+                android:textColor="#595858"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

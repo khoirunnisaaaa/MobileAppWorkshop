@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--membuat layout dengan tipe linear berorientasi vertikal untuk menu profile
+- background hitam
+- padding 16 dp-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallsFragment"
+    android:background="@color/design_default_color_on_primary"
+    android:backgroundTint="@color/black"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--membuat layout bagian atas untuk label Profile-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/label_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Profile"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <!--di bawah label Profile terdapat avatar profile pengguna yang berada di tengah berdasarkan sisi horizontal-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/profil"
+        android:layout_marginTop="50dp"/>
+    <!--membuat text di bawah avatar profile untuk Nama Pengguna yang berada di tengah layar-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Khoirunnisa"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:layout_marginTop="15dp"/>
+    <!--membuat text username di bawah Nama Pengguna -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\@khoirunnisa117"
+        android:textColor="#707070"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"/>
+
+    <!--membuat button dengan icon sebanyak 4 menggunakan layout relative-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="50dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_second_solid"
+            android:padding="15dp"
+            android:id="@+id/chat">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/chat"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_second_solid"
+            android:padding="15dp"
+            android:layout_toRightOf="@+id/chat"
+            android:layout_marginLeft="15dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/history"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_second_solid"
+            android:padding="15dp"
+            android:layout_toRightOf="@+id/history"
+            android:layout_marginLeft="15dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/heart"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/love"
+            android:background="@drawable/bg_second_solid"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/more" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--membuat detail dari profile pengguna yang terdiri dari Label dan Data-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DISPLAY NAME"
+        android:textColor="#707070"
+        android:textSize="12dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khoirunnisa"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMAIL ADDRESS"
+        android:textColor="#707070"
+        android:textSize="12dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="k.nisa11602\@gmail.com"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADDRESS"
+        android:textColor="#707070"
+        android:textSize="12dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kabupaten Pasuruan, Jawa Timur"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHONE NUMBER"
+        android:textColor="#707070"
+        android:textSize="12dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+6288881233423"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="15dp"/>
+
+</LinearLayout>

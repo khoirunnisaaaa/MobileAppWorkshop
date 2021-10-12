@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--membuat layout menggunakan tipe linear yang berorientasi vertical-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".StatusFragment"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--menambahkan tampilan untuk kolom pencarian dengan
+    - lebar sesuai dengan parent
+    - tinggi sesuai dengan konten
+    - menggunakan background bg_second_solid
+    - memiliki margin bawah 30dp & margin atas 20dp-->
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_second_solid"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <!--membuat label categories-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <!--membuat layout dengan tipe relative untuk membungkus categories-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <!--Categories pertama yang memiliki
+        - image ukuran 35dp
+        - title font size 12sp
+        - padding 10dp-->
+        <RelativeLayout
+            android:id="@+id/ctg_first"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_second_solid"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/img_planets"
+                android:layout_marginTop="5dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/planet" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Planets"
+                android:textSize="12sp"
+                android:layout_below="@+id/img_planets"
+                android:textColor="#7C7C7C"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+
+        <!--membuat categories kedua (sama dengan categories pertama hanya image dan title yang berbeda)-->
+        <RelativeLayout
+            android:id="@+id/ctg_second"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_second_solid"
+            android:padding="10dp"
+            android:layout_toRightOf="@+id/ctg_first"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/img_planets2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/meteor" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meteors"
+                android:textSize="12sp"
+                android:layout_below="@+id/img_planets2"
+                android:textColor="#7C7C7C"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+        <!--membuat categories ketiga (sama dengan categories pertama hanya image dan title yang berbeda)-->
+        <RelativeLayout
+            android:id="@+id/ctg_third"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_second_solid"
+            android:padding="10dp"
+            android:layout_toRightOf="@+id/ctg_second"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/img_planets3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/asteroid" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Asteroid"
+                android:textSize="12sp"
+                android:layout_below="@+id/img_planets3"
+                android:textColor="#7C7C7C"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+        <!--membuat categories keempat (sama dengan categories pertama hanya image dan title yang berbeda)-->
+        <RelativeLayout
+            android:id="@+id/ctg_4rd"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_second_solid"
+            android:padding="10dp"
+            android:layout_toRightOf="@+id/ctg_third"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/img_planets4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/comet" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comet"
+                android:textSize="12sp"
+                android:layout_below="@+id/img_planets4"
+                android:textColor="#7C7C7C"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--membuat label untuk suggestion-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Suggestions"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!--menambahkan gambar-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:src="@drawable/banner3"
+        android:layout_marginTop="10dp"/>
+
+    <!--menambahkan gambar-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:src="@drawable/banner2"
+        android:layout_marginTop="15dp"/>
+
+
+</LinearLayout>
