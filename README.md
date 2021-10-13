@@ -10,3 +10,7 @@ KHOIRUNNISA' / E41200183 / TIF A
 3. Screenshoot of FRAGMENT
 ![BottomNavigation](https://user-images.githubusercontent.com/75185958/137036048-4b4828ca-c1fa-45b3-a4c8-6cc026e905f8.jpg)
 
+4. Screenshoot of IMPLISIT EXPLISIT INTENT APP
+![BottomNavigation (1)](https://user-images.githubusercontent.com/75185958/137106093-6fda96c5-6dba-4e00-b2bb-42e32bd5bd0a.jpg)
+
+
