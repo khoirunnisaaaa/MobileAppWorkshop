@@ -16,4 +16,8 @@ KHOIRUNNISA' / E41200183 / TIF A
 5. Screeenshoot of MANAGEMENT FILE
 <img width="921" alt="CaptureWeek7" src="https://user-images.githubusercontent.com/75185958/138560885-3b11c4eb-5fda-44ed-be83-07ee33346e50.PNG">
 
+6. Screenshoot of SQLite
+![BottomNavigation (2)](https://user-images.githubusercontent.com/75185958/138564298-45cfe2b3-1f34-496f-912f-594c5bcd768e.jpg)
+
+
 
